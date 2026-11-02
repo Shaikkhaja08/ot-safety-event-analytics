@@ -1,0 +1,15 @@
+ot-safety-analytics/
+├── README.md
+├── requirements.txt
+├── schema.sql
+├── data_dictionary.md
+├── src/
+│   ├── __init__.py
+│   ├── generator.py       # Deterministic master & transaction data generator
+│   ├── anomalies.py       # Labelled edge case injection & separate ground truth
+│   ├── validator.py       # Comprehensive relational & chronological integrity checks
+│   └── analytics.py       # Workflow to detect repeated unsafe conditions & metrics
+├── tests/
+│   ├── __init__.py
+│   └── test_pipeline.py   # Pytest suite verifying validation, reproduction, & metrics
+└── run_pipeline.py        # Single CLI entry point
